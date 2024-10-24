@@ -1,0 +1,3 @@
+/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build/CMakeFiles/algoProject.dir
+/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build/CMakeFiles/edit_cache.dir
+/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build/CMakeFiles/rebuild_cache.dir

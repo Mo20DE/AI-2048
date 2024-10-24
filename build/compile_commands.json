@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms -isystem /opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o CMakeFiles/algoProject.dir/src/main.cpp.o -c /Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/main.cpp",
+  "file": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/main.cpp",
+  "output": "CMakeFiles/algoProject.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms -isystem /opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o CMakeFiles/algoProject.dir/src/algorithms/expectimax.cpp.o -c /Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms/expectimax.cpp",
+  "file": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms/expectimax.cpp",
+  "output": "CMakeFiles/algoProject.dir/src/algorithms/expectimax.cpp.o"
+},
+{
+  "directory": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms -isystem /opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o CMakeFiles/algoProject.dir/src/algorithms/mcts.cpp.o -c /Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms/mcts.cpp",
+  "file": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms/mcts.cpp",
+  "output": "CMakeFiles/algoProject.dir/src/algorithms/mcts.cpp.o"
+},
+{
+  "directory": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms -isystem /opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o CMakeFiles/algoProject.dir/src/algorithms/heuristics.cpp.o -c /Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms/heuristics.cpp",
+  "file": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms/heuristics.cpp",
+  "output": "CMakeFiles/algoProject.dir/src/algorithms/heuristics.cpp.o"
+},
+{
+  "directory": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms -isystem /opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o CMakeFiles/algoProject.dir/src/library/globals.cpp.o -c /Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library/globals.cpp",
+  "file": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library/globals.cpp",
+  "output": "CMakeFiles/algoProject.dir/src/library/globals.cpp.o"
+},
+{
+  "directory": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms -isystem /opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o CMakeFiles/algoProject.dir/src/library/board.cpp.o -c /Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library/board.cpp",
+  "file": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library/board.cpp",
+  "output": "CMakeFiles/algoProject.dir/src/library/board.cpp.o"
+},
+{
+  "directory": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library -I/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/algorithms -isystem /opt/homebrew/include/eigen3 -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o CMakeFiles/algoProject.dir/src/library/node.cpp.o -c /Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library/node.cpp",
+  "file": "/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/src/library/node.cpp",
+  "output": "CMakeFiles/algoProject.dir/src/library/node.cpp.o"
+}
+]
