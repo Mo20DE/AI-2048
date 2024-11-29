@@ -1,4 +1,4 @@
-# Bachelorprojekt 2048-Puzzle
+# Bachelorprojekt - KI zur Lösung des 2048-Puzzles
 
 ## Beschreibung
 
@@ -48,4 +48,3 @@ Der zweite ist `Depth` für Expectimax bzw. `Iterations` für MCTS(E) mit einem 
 ./build_and_run.sh 0 3 # Expectimax mit Tiefenlimit 3
 ./build_and_run.sh 1 2000 # MCTSE mit 2000 Iterationen pro Zug
 ```
-
