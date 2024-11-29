@@ -1,3 +1,0 @@
-/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build/CMakeFiles/thesisProject.dir
-/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build/CMakeFiles/edit_cache.dir
-/Users/mzm/Desktop/Bachelorarbeit/thesis-implementation/build/CMakeFiles/rebuild_cache.dir
