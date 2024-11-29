@@ -42,7 +42,7 @@ Der erste Parameter ist `Algorithm` mit den Optionenen:
 Der zweite ist `Depth` für Expectimax bzw. `Iterations` für MCTS(E) mit einem Wert aus den Intervallen:
 
 * `1` bis `10` - Expectimax
-* `100`und `4000` - MCTS(E)
+* `100` bis `4000` - MCTS(E)
 
 ```
 ./build_and_run.sh 0 3 # Expectimax mit Tiefenlimit 3
