@@ -1,4 +1,3 @@
-#include "board.hpp"
 #include "expectimax.hpp"
 #include "mctse.hpp"
 #include "mcts.hpp"
