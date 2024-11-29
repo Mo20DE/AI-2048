@@ -9,7 +9,7 @@ void runSimulation(int algo, int deepness) {
 
     static const string MOVES[4] = {"LEFT", "RIGHT", "UP", "DOWN"};
     int GAME_MODE = algo; // 0 - Expectimax, 1 - MCTSE, 2 - MCTS
-    int dim = 4; // Board Dimension
+    int dim = 4; // board dimension
     
     // initialize algorithm classes
     ExpectiMax expmax(dim);
@@ -72,6 +72,9 @@ int main(int argc, char* argv[]) {
     int algo = stoi(argv[1]);
     int deepness = stoi(argv[2]);
     runSimulation(algo, deepness);
+    
+    // Simulation results of Expectimax with transposition table and depth 3
+    // plotData("expmax_3_tt.json");
 
     return 0;
 }

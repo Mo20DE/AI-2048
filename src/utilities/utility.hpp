@@ -110,6 +110,8 @@ void plotData(const string filename) {
     }
     avg_max_tile /= data.first.size();
 
+    cout << "\n\nSimulation results of " + filename + "\n";
+
     cout << "\nMax Score:" << data.second.maxCoeff() << endl;
     cout << "Avg. Score:" << data.second.mean() << endl;
 
