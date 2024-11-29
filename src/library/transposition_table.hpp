@@ -2,14 +2,12 @@
 
 #include "globals.hpp"
 
+
 // Transposition Table Entry
 struct TTEntryExpMax {
     float utility;
     int depth;
-};
-
-struct TTEntryMCTS {
-
+    TTEntryExpMax(float u = 0., int d = 0) : utility(u), depth(d) {}
 };
 
 template <typename TTEntryType>
@@ -18,11 +16,11 @@ class TranspositionTable {
 
     public:
         TranspositionTable(int b_dim);
+        uint64_t computeHash(Board board);
         std::optional<TTEntryType> lookup(uint64_t hash);
         void saveEntry(uint64_t hash, TTEntryType entry);
         // bool contains(unsigned long long hash);
         void resetTranspositionTable();
-        uint64_t computeHash(Board board);
 
         int dim;
 
@@ -35,13 +33,24 @@ class TranspositionTable {
         unordered_map<int, int> tileMappingTable; // log2 table
 };
 
-#include "transposition_table.hpp"
 
 // public functions
 template <typename TTEntryType>
 TranspositionTable<TTEntryType>::TranspositionTable(int b_dim) : dim(b_dim) {
     initializeZobristTable();
     initializeTileMappingTable();
+}
+
+template <typename TTEntryType>
+uint64_t TranspositionTable<TTEntryType>::computeHash(Board board) {
+    uint64_t hash = 0;
+    for (int row = 0; row < dim; row++) {
+        for (int col = 0; col < dim; col++) {
+            int tile = tileMappingTable[board(row, col)];
+            hash ^= zobristTable[row][col][tile];
+        }
+    }
+    return hash;
 }
 
 template <typename TTEntryType>
@@ -65,18 +74,6 @@ void TranspositionTable<TTEntryType>::resetTranspositionTable() {
 }
 
 // private functions
-template <typename TTEntryType>
-uint64_t TranspositionTable<TTEntryType>::computeHash(Board board) {
-    uint64_t hash = 0;
-    for (int row = 0; row < dim; row++) {
-        for (int col = 0; col < dim; col++) {
-            int tile = tileMappingTable[board(row, col)];
-            hash ^= zobristTable[row][col][tile];
-        }
-    }
-    return hash;
-}
-
 template <typename TTEntryType>
 void TranspositionTable<TTEntryType>::initializeZobristTable() {
 
@@ -102,4 +99,3 @@ void TranspositionTable<TTEntryType>::initializeTileMappingTable() {
         tileMappingTable[static_cast<int>(pow(2, i))] = i;
     }
 }
-

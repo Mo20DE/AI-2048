@@ -4,13 +4,11 @@
 #include "Eigen/Dense"
 #include <random>
 
+
 using namespace std;
 
-// using Board = Eigen::MatrixXi;
-// using Cells = vector<pair<int, int> >;
-
-typedef Eigen::MatrixXi Board;
-typedef vector<pair<int, int> > Cells;
+using Board = Eigen::MatrixXi;
+using Cells = vector<pair<int, int>>;
 
 enum Move { Left, Right, Up, Down };
 

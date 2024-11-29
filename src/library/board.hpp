@@ -2,11 +2,13 @@
 
 #include "globals.hpp"
 
+
 struct BoardData {
     Board board;
     int score;
     int merges;
-    BoardData(Board b, int s, int m) : board(b), score(s), merges(m) {}
+    BoardData(Board b, int s, int m) 
+    : board(b), score(s), merges(m) {}
 };
 
 void printBoard(Board b);

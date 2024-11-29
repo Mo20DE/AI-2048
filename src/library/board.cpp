@@ -1,5 +1,6 @@
 #include "board.hpp"
 
+
 void printBoard(Board b) {
     cout << "\n" << b << "\n";
 }
@@ -21,9 +22,6 @@ bool isGameEnd(Board board) {
             if (i < n-1) {
                 if (board(i, j) == board(i+1, j)) return false;
             }
-            // if (board(i, j) == board(i, j+1) || b_T(i, j) == b_T(i, j+1)) {
-            //     return false;
-            // }
         }
     }
     return true;
@@ -45,6 +43,7 @@ Cells getEmptyCells(Board board) {
 }
 
 pair<vector<Move>, vector<Board> > getLegalMoves(Board board) {
+
     vector<Move> legal_moves;
     vector<Board> new_states;
     for (int i = 0; i < 4; i++) {
@@ -58,7 +57,6 @@ pair<vector<Move>, vector<Board> > getLegalMoves(Board board) {
     return make_pair(legal_moves, new_states);
 }
 
-// function for board initialization
 Board initializeBoard(int dim) {
     assert(dim >= 3 && dim <= 6);
     Board board(dim, dim);
@@ -72,15 +70,16 @@ Board insertRandomTile(Board board) {
     uniform_int_distribution<int> dis(0, empty_cells.size()-1);
     int emptyIdx = dis(rng);
     pair<int, int> pos = empty_cells[emptyIdx];
-    // select random tile 
+    // select new random tile (2 or 4)
     uniform_real_distribution<float> dis1(0, 1);
-    int randTile = dis1(rng) < 0.9 ? 2 : 4; // choose random tile (2 or 4)
+    int randTile = dis1(rng) < 0.9 ? 2 : 4;
     board(pos.first, pos.second) = randTile;
 
     return board;
 }
 
 Board transformBoard(Board board, Move dir, bool back = false) {
+
     if (dir == Left) return board;
     else if (dir == Right) {
         return board.rowwise().reverse();
@@ -93,10 +92,8 @@ Board transformBoard(Board board, Move dir, bool back = false) {
     return board.colwise().reverse().transpose();
 }
 
-// move logic
 BoardData executeMove(Board board, Move dir) {
 
-    // transform matrix
     Board b = transformBoard(board, dir);;
     int n = b.rows();
 

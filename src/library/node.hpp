@@ -2,6 +2,7 @@
 
 #include "globals.hpp"
 
+
 struct Node {
 
     Board state;
