@@ -17,17 +17,35 @@ Konkret wurden drei Algorithmen implementiert. Zum einen Expectimax mit einer Tr
 
 Die Evaluationsfunktion mit den drei genannten Heuristiken kommt bei der Expectimax-Suche zum einsatz. Für MCTS(E) wurde ausschließlich die Empty-Cells-Heuristik verwendet, da MCTS(E) mit dieser die besten Ergebnisse erzielte.
 
+
 ## Installation und Ausführung
 
-Um die Agenten zu testen, kann mit einem Befehl und zusätzlich zwei spezifischen Parametern das Projekt gebaut und ausgeführt werden. Der erste Parameter ist `Algorithm` mit den Optionenen: `0` (Expectimax), `1` (MCTSE) oder `2` (MCTS). Und der zweite ist `Depth` (für Expectimax), mit einem Wert zwischen `1` und `10` bzw. `Iterations` (für MCTS(E)) mit einem Wert zwischen `100`und `4000`.
+### Voraussetzungen
+
+  * C++ Compiler mit Unterstützung für C++17 oder höher, z.B.: GCC oder Clang 
+  * CMake (Version 3.14 oder neuer)
+  * Eigen-Bibliothek (Version 3.3 oder neuer)
+
+### Bauen und Ausführen
+
+Um die Agenten zu testen, kann mit einem Befehl und zusätzlich zwei spezifischen Parametern das Projekt gebaut und ausgeführt werden.
 
 ```
 ./build_and_run.sh <Algorithm> <Depth | Iterations> 
 ```
+Der erste Parameter ist `Algorithm` mit den Optionenen: 
 
-Ein Beispiel wäre folgender Befehl, mit dem eine Simulation des Expectimax-Agenten mit Tiefenlimit 3 ausgeführt wird.
+* `0` - Expectimax 
+* `1` - MCTSE  
+* `2` - MCTS 
+  
+Der zweite ist `Depth` für Expectimax bzw. `Iterations` für MCTS(E) mit einem Wert aus den Intervallen:
+
+* `1` bis `10` - Expectimax
+* `100`und `4000` - MCTS(E)
 
 ```
-./build_and_run.sh 0 3
+./build_and_run.sh 0 3 # Expectimax mit Tiefenlimit 3
+./build_and_run.sh 1 2000 # MCTSE mit 2000 Iterationen pro Zug
 ```
 
